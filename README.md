@@ -5,8 +5,19 @@ This project implements predictive models, leveraging Decision Trees and Naïve 
 
 ### Implementation
 🎯 Started with comprehensive dataset analysis which revealed a clean dataset. I converted the features into binary vector, each place in the vector represents if the feature is present in the compound or not.
+
 🎯 To navigate a dataset with potentially thousands of binary features, I then employed the chi-squared test to assess the relationship between features and the target variable. Cross-validating the feature fraction, I chose to retain 90% of features to reduce dimensionality and overfitting
-🎯 
-🎯
-🎯
-🎯
+
+🎯 Addressing the dataset's imbalance, I opted for oversampling with replacement. Stratifying training labels ensured a fair class distribution
+
+#### Naïve Bayes:
+I explored F1 scores for different feature selection fractions, recognizing the model's sensitivity to class imbalance. The findings emphasized the need for alternative models to capture complex relationships in the data.
+
+### Decision Trees:
+To combat overfitting, I experimented with pre-pruning and post-pruning. 
+Cost-complexity pruning identified the optimal alpha value, allowing me to choose a tree with appropriate complexity. 
+The decision tree achieved an F1 score of 70.96% with default parameters. 
+
+🎯 Compared running times: Naïve Bayes (1.364s) vs. Decision Tree (12.996s).
+
+
