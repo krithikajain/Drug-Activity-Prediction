@@ -13,11 +13,17 @@ This project implements predictive models, leveraging Decision Trees and Naïve 
 #### Naïve Bayes:
 I explored F1 scores for different feature selection fractions, recognizing the model's sensitivity to class imbalance. The findings emphasized the need for alternative models to capture complex relationships in the data.
 
-### Decision Trees:
+#### Decision Trees:
 To combat overfitting, I experimented with pre-pruning and post-pruning. 
 Cost-complexity pruning identified the optimal alpha value, allowing me to choose a tree with appropriate complexity. 
 The decision tree achieved an F1 score of 70.96% with default parameters. 
 
 🎯 Compared running times: Naïve Bayes (1.364s) vs. Decision Tree (12.996s).
 
+### Results 
+▶️ Naïve Bayes: Faster and simpler but less effective for drug activity prediction.
+
+▶️ Decision Trees: Slower yet demonstrated superior performance.
+
+▶️ Achieved an F1 score of 70.96% with decision tree classification.
 
